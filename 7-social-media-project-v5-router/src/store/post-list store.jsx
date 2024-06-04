@@ -24,6 +24,7 @@ const PostListProvider = ({ children }) => {
   const [fetching, setFetching] = useState(false);
 
   const addPost = (post) => {
+
     dispatchPostList({
       type: "ADD_POST",
       payload: post,
